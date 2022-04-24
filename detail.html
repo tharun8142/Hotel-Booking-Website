@@ -114,16 +114,16 @@
           <div class="form-container">
             <form style="margin: 35% 4% 1% 4%;" action="payment.html" method="get" autocomplete="off">
               <label>Adults:</label>
-              <input style="width:80%;" type="number" name="Adults" value="" min="1" required><br><br><br>
+              <input style="width:80%;" type="number" id="adults" name="Adults" value="" min="1" required onkeyup="mul(this.value);"><br><br><br>
               <label>Name:</label>
               <input style="width:80%;" type="text" name="name" value="" required><br><br><br>
               <label>From Date:</label>
-              <input style="width:70%;" type="date" name="from date" value=""><br><br><br>
+              <input style="width:70%;" type="date" id="start"name="from date" value=""><br><br><br>
               <label>To Date:</label>
-              <input style="width:75%;" type="date" name="to date" value=""><br><br><br>
+              <input style="width:75%;" type="date" id="end" name="to date" value=""><br><br><br>
               <label>Total</label>
-              <input style="width:80%;" type="number" name="price" value="" disabled><br><br><br>
-              <button style="padding: 5px;" id="book-btn">Book Now</button>
+              <input style="width:80%;" type="number"  id="result" name="price" value="" disabled><br><br><br>
+              <button style="padding: 5px;" onclick="totalAmount()" id="book-btn">Book Now</button>
             </form>
           </div>
         </td>
@@ -248,29 +248,11 @@
       }
     }
 
-
   </script>
 
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <div id="modal-header" class="modal-header">
-        <span class="close">&times;</span>
-        <h5 class="modal-title">Please Login!</h5>
 
-        <form action="index.html" method="get" autocomplete="off">
-          <label for="user">Username:</label>
-          <input id="user" type="text" name="username" value="" placeholder="enter your name" required><br><br>
-          <label for="password">Password:</label>
-          <input id="password" type="password" name="password" value="" placeholder="enter your password" required><br>
 
-      </div>
-      <div id="modal-footer" class="modal-footer">
-
-        <button type="button" onclick="Mylognbtn()" id="lognbtn-in-modal" class="btn btn-primary">Login</button>
-      </div>
-    </div>
-  </div>
-
+<script src="./scripts/detail.js"></script>
 
 </body>
 
