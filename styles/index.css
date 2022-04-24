@@ -26,9 +26,9 @@ body{
 
 #viewmore{
     position: relative;
-     margin-top: 10%;
+     margin-top: 8%;
     margin-bottom: 10%;
-     margin-left: 50%;
+     margin-left: 45%;
     
 
   
@@ -53,7 +53,7 @@ body{
 
  .image-container{
      display: flex;
-     width: 200px;
+     width: 197px;
  }
  .container-overly{
 
@@ -80,8 +80,9 @@ body{
  }
 
 
- .container-modal2{
+ #container-modal2{
     float: left;
+    background-color: aqua;
     
 }
 /* The Modal (background) */
@@ -96,6 +97,7 @@ body{
     width: 40%; /* Full width */
     height: 60%; /* Full height */
      /* Enable scroll if needed */
+     
 
   }
   .close {
